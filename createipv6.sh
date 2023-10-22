@@ -37,7 +37,7 @@ setgid 65535
 setuid 65535
 flush
 
-$(awk -F "/" '{print "socks -6 -n -a -p" $4 " -i" $3 " -e"$5"\n" \
+$(awk -F "/" '{print "proxy -6 -n -a -p" $4 " -i" $3 " -e"$5"\n" \
 "flush\n"}' ${WORKDATA})
 EOF
 }
